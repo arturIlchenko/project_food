@@ -500,16 +500,20 @@ window.addEventListener('DOMContentLoaded', () => {
 	function getStaticParametr(parentElement, activClass) {
 		parentElement.forEach((element) => {
 			element.addEventListener('click', (e) => {
+
 				parentElement.forEach((elem) => {
 					elem.classList.remove(activClass)
 				});
+
 				e.target.classList.add(activClass);
 				if (e.target.getAttribute('data-ratio')) {
 					ratio = e.target.getAttribute('data-ratio')
 				} else {
 					sex = e.target.getAttribute('id')
 				};
+
 				calcTotal();
+				``
 			})
 		})
 	};
@@ -529,7 +533,6 @@ window.addEventListener('DOMContentLoaded', () => {
 						age = e.target.value;
 						break;
 				}
-				console.log(sex, height, weight, age, ratio``);
 				calcTotal();
 			});
 		});

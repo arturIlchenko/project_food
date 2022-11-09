@@ -501,7 +501,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				element.classList.remove(activClass);
 				if (element.getAttribute('id') === sex) {
 					element.classList.add(activClass);
-				} else if (element.getAttribute('data-ratio') ==`` ratio) {
+				} else if (element.getAttribute('data-ratio') == ratio) {
 					element.classList.add(activClass)
 				};
 			})
